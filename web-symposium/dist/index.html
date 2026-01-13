@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR-symposium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" crossorigin href="./assets/index-D-5Xz62D.css">
+</head>
+
+<body class=" font-DM-sans bg-gray-900">
+
+    <!-- Header Start -->
+    <header class=" p-4 fixed top-0 left-0 right-0 z-50">
+
+        <div class="container mx-auto px-15 flex justify-between items-center">
+            <a href="">
+                <img src="./assets/footer-logo-white-YiWGpo0Y.svg" alt="">
+            </a>
+            <button id="menuBtn" class="lg:hidden text-white text-3xl">
+                <i class="bi bi-list"></i>
+            </button>
+            <!-- nav-bar -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <ul class="flex space-x-5 text-white/80">
+                    <li class="text-blue-600"><a href="">Homepage</a></li>
+                    <li class="transition-all duration-200 ease-in hover:text-out-btn"><a href="">Schedules</a></li>
+                    <li class="transition-all duration-200 ease-in hover:text-out-btn"><a href="">Speakers</a></li>
+                    <li class="relative group transition-all duration-200 ease-in hover:text-out-btn"><a
+                            href="">Blog</a>
+                        <ul
+                            class="w-48 space-y-3 mt-4 bg-gray-950 text-white p-3 opacity-0 invisible absolute top-full duration-200 ease-in group-hover:visible group-hover:opacity-100 group-hover:-translate-y-2 ">
+                            <li><a href="">Blog List</a></li>
+                            <li><a href="">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="transition-all duration-200 ease-in hover:text-out-btn"><a href="">Contact</a></li>
+                    <li class="transition-all duration-200 ease-in hover:text-out-btn"><a href="">Documentation</a></li>
+                </ul>
+
+                <div class="flex gap-3">
+
+                    <button id="themeToggle" class="text-white text-xl border border-out-btn rounded-lg px-3 py-2">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+
+                    <a class="relative overflow-hidden w-40 h-12 flex justify-center  items-center   border border-blue-600 text-blue-600 font-semibold rounded group"
+                        href="">
+                        <span
+                            class="absolute inset-0 w-full h-0 bg-blue-600 transition-all duration-200 ease-out group-hover:h-full"></span>
+                        <span
+                            class="relative z-10 group-hover:text-white transition-colors duration-200 text-lg xl:text-sm">
+                            Sign In
+                        </span>
+                    </a>
+                    <a href="#"
+                        class="relative overflow-hidden w-40 h-12 flex justify-center  items-center border border-blue-600 text-blue-600 font-semibold rounded group">
+
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-full bg-blue-600 transition-all duration-200 ease-out group-hover:h-0"></span>
+
+
+                        <span
+                            class="relative flex items-center z-10 text-white group-hover:text-blue-600  transition-colors duration-200 text-lg">
+                            Sign Up
+                        </span>
+                    </a>
+
+                </div>
+            </nav>
+        </div>
+
+        <!-- toggel-menu -->
+        <div id="mobileMenu" class="fixed top-0 right-0 h-full w-72 bg-gray-900 text-white
+         transform translate-x-full transition-transform duration-300
+         lg:hidden z-50 p-6">
+            <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl">
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <ul class="space-y-4 mt-10">
+                <li class="text-blue-500"><a href="">Homepage</a></li>
+                <li><a href="">Schedules</a></li>
+                <li><a href="">Speakers</a></li>
+
+
+                <li>
+                    <button id="blogBtn" class="w-full text-left">Blog</button>
+                    <ul id="blogMenu" class="hidden ml-4 mt-2 space-y-2">
+                        <li><a href="">Blog List</a></li>
+                        <li><a href="">Blog Details</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Contact</a></li>
+                <li><a href="">Documentation</a></li>
+                <li>
+                    <button id="themeToggle" class="text-white text-xl border border-out-btn rounded-lg px-3 py-2">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </li>
+
+                <li class="pt-4 flex flex-col gap-3">
+                    <a class="px-5 py-2 border border-out-btn rounded-lg text-center">Sign In</a>
+                    <a class="px-5 py-2 border border-out-btn rounded-lg text-center">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <!-- Hero Start -->
+        <section>
+            <div class="py-25">
+                <div class="container mx-auto px-15">
+                    <!-- Main Grid Container -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+
+                        <!-- Left Column - Content Section -->
+                        <div class="order-2 lg:order-1 mt-10 lg:mt-0">
+                            <p
+                                class="inline-block mb-8 text-out-btn text-xl border-b-6 border-b-out-btn/50 font-semibold">
+                                Starts on 16 June 2024
+                            </p>
+                            <h1 class="mb-8 text-white text-5xl md:text-6xl lg:text-7xl font-semibold">
+                                User Experience <br>Conference
+                            </h1>
+                            <p class="text-xl text-gray-600 mb-15">
+                                We offer you a new generation of task and project management system. Plan, manage and
+                                track.
+                            </p>
+                            <div class="flex flex-col sm:flex-row sm:space-x-3 space-y-4 sm:space-y-0">
+                                <a href="#"
+                                    class="relative overflow-hidden py-5 w-full sm:w-auto sm:flex-1 md:w-60 sm:h-12 flex justify-center items-center h-12 border border-blue-600 text-blue-600 font-semibold rounded group">
+                                    <span
+                                        class="absolute bottom-0 left-0 w-full h-full bg-blue-600 transition-all duration-200 ease-out group-hover:h-0"></span>
+                                    <span
+                                        class="relative flex items-center z-10 text-white group-hover:text-blue-600 transition-colors duration-200 text-lg">
+                                        <i
+                                            class="relative bottom-0 left-0 z-10 text-white group-hover:text-blue-600 transition-colors duration-200 bi bi-ticket-perforated me-4"></i>
+                                        Buy access pass
+                                    </span>
+                                </a>
+                                <a href="#"
+                                    class="relative overflow-hidden w-full sm:w-auto sm:flex-1 md:w-60 sm:h-12 flex justify-center items-center h-12 border border-blue-600 text-blue-600 font-semibold rounded group">
+                                    <span
+                                        class="absolute top-0 left-0 w-full h-0 bg-blue-600 transition-all duration-200 ease-out group-hover:h-full"></span>
+                                    <span
+                                        class="relative flex items-center z-10 group-hover:text-white transition-colors duration-200 text-lg">
+                                        <i
+                                            class="relative left-0 z-10 group-hover:text-white transition-colors duration-300 bi bi-calendar me-4 text-out-btn"></i>
+                                        Add to Calendar
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right Column - Images Section -->
+                        <div class="order-1 lg:order-2">
+                            <!-- Nested Grid for Images -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-8 px-4">
+
+                                <!-- First Image Card -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="bg-blue-400 rounded-b-full rounded-s-full mt-10 relative w-full max-w-xs md:max-w-sm lg:max-w-md">
+                                        <div class="flex justify-center items-center">
+                                            <img src="./assets/john-C9eaWy3k.png" class="w-full" alt="John Karter">
+                                        </div>
+                                        <div class="absolute top-[10%] rounded-xl -left-4 sm:-left-10 bg-amber-300 p-3">
+                                            <h3 class="font-semibold text-amber-800">John Karter</h3>
+                                            <p class="text-amber-800">8.8 Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Second Image Card -->
+                                <div class="flex justify-center">
+                                    <div
+                                        class="bg-blue-400 rounded-bl-[170px] rounded-tr-[170px] rounded-tl-xl w-full max-w-xs md:max-w-sm lg:max-w-md mt-10 relative">
+                                        <img src="./assets/maria-DQLA2nvM.png" class="w-full mt-20" alt="Maria John">
+                                        <div
+                                            class="absolute top-[30%] -right-4 sm:-right-10 bg-green-300 rounded-xl p-3">
+                                            <h3 class="font-semibold text-green-900">Maria John</h3>
+                                            <p class="text-green-900">4.9 Rating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <!-- Hero End -->
+
+        <!-- Slider Start  -->
+      <section class="py-25 bg-gray-700/20 overflow-x-hidden">
+    <div class="container px-4 md:px-15 mx-auto">
+        <!-- Main Grid Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 px-4">
+            
+            <!-- Left Column - Slider Section -->
+            <div class="order-1 lg:order-1 flex flex-col items-center lg:items-start">
+                <!-- Main Image Container -->
+                <div class="relative overflow-hidden rounded-2xl w-full max-w-2xl">
+                    <img id="mainImage" src="./assets/Slider_1-CXhYDi2N.png"
+                        class="w-full h-[300px] md:h-[380px] lg:h-[420px] object-cover transition-all duration-500"
+                        alt="Main slider image">
+
+                    <!-- Navigation Buttons -->
+                    <button onclick="prevSlide()"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 md:p-3 rounded-full transition-colors">
+                        <i class="bi bi-arrow-left-circle-fill text-lg md:text-xl"></i>
+                    </button>
+
+                    <button onclick="nextSlide()"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 md:p-3 rounded-full transition-colors">
+                        <i class="bi bi-arrow-right-circle-fill text-lg md:text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- Thumbnail Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mt-5 w-full max-w-2xl">
+                    <img class="thumb w-full h-[65px] object-cover rounded-xl cursor-pointer opacity-50 hover:opacity-100 transition-all duration-300 border-2 border-transparent active:opacity-100 active:border-blue-500"
+                        src="./assets/Slider_1-CXhYDi2N.png" alt="Thumbnail 1">
+                    <img class="thumb w-full h-[65px] object-cover rounded-xl cursor-pointer opacity-50 hover:opacity-100 transition-all duration-300 border-2 border-transparent active:opacity-100 active:border-blue-500"
+                        src="./assets/Slider_2-DpXIIT7p.jpg" alt="Thumbnail 2">
+                    <img class="thumb w-full h-[65px] object-cover rounded-xl cursor-pointer opacity-50 hover:opacity-100 transition-all duration-300 border-2 border-transparent active:opacity-100 active:border-blue-500"
+                        src="./assets/Slider_3-DByhuKd4.png" alt="Thumbnail 3">
+                    <img class="thumb w-full h-[65px] object-cover rounded-xl cursor-pointer opacity-50 hover:opacity-100 transition-all duration-300 border-2 border-transparent active:opacity-100 active:border-blue-500"
+                        src="./assets/Slider_4-Ciw-feyL.jpg" alt="Thumbnail 4">
+                </div>
+            </div>
+
+            <!-- Right Column - Content Section -->
+            <div class="order-2 lg:order-2 flex flex-col justify-center">
+                <div class="text-center md:text-left lg:ms-5 w-full max-w-2xl mx-auto md:mx-0">
+                    <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:mb-8 leading-tight">
+                        Best Online and Offline Conferences
+                    </h2>
+                    <p class="text-gray-600 text-base md:text-lg mb-6 lg:mb-8 leading-relaxed">
+                        Sometimes by accident, sometimes chunks as necessary making this the first true generator on the Internet. Recently with desktop publishing software like Aldus PageMaker.
+                    </p>
+                    
+                    <!-- Button Container -->
+                    <div class="flex justify-center md:justify-start">
+                        <a href="#"
+                            class="relative overflow-hidden w-full md:w-auto px-8 md:px-0 md:w-60 h-12 flex justify-center items-center border border-blue-600 text-blue-600 font-semibold rounded group transition-all duration-200">
+                            <span
+                                class="absolute top-0 left-0 w-full h-0 bg-blue-600 transition-all duration-200 ease-out group-hover:h-full"></span>
+                            <span
+                                class="relative flex items-center z-10 group-hover:text-white transition-colors duration-200 text-base md:text-lg">
+                                <i class="relative left-0 z-10 group-hover:text-white transition-colors duration-300 bi bi-calendar me-3 md:me-4 text-out-btn"></i>
+                                Upcoming Conference
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+        <!-- Slider End -->
+
+        <!-- Speakers Start -->
+        <section class=" py-25">
+            <div class="container mx-auto px-15">
+
+                <h2 class="text-4xl text-white font-bold text-center mb-16">
+                    World Class Speakers
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 items-start">
+
+                    <div class="text-center">
+                        <img src="./assets/speakers_1-DGpH_Nbm.png" class="mx-auto rounded-2xl mb-5" />
+                        <h3 class="text-white text-xl font-semibold">Darrell Steward</h3>
+                        <p class="text-slate-400">Designation</p>
+                    </div>
+
+
+                    <div class="text-center mt-20">
+                        <img src="./assets/speakers_2-B5sy7vek.png" class="mx-auto rounded-2xl mb-5" />
+                        <h3 class="text-white text-xl font-semibold">Darrell Steward</h3>
+                        <p class="text-slate-400">Designation</p>
+                    </div>
+
+                    <div class="text-center -mt-10">
+                        <img src="./assets/speakers_3-svB-t_XA.png" class="mx-auto rounded-2xl mb-5" />
+                        <h3 class="text-white text-xl font-semibold">Darrell Steward</h3>
+                        <p class="text-slate-400">Designation</p>
+                    </div>
+
+                    <div class="text-center mt-20">
+                        <img src="./assets/speakers_4-BxqcZJPx.png" class="mx-auto rounded-2xl mb-5" />
+                        <h3 class="text-white text-xl font-semibold">Darrell Steward</h3>
+                        <p class="text-slate-400">Designation</p>
+                    </div>
+
+
+                    <div class="text-center">
+                        <img src="./assets/speakers_5-A72jRNuC.png" class="mx-auto rounded-2xl mb-5" />
+                        <h3 class="text-white text-xl font-semibold">Darrell Steward</h3>
+                        <p class="text-slate-400">Designation</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!-- Speakers End -->
+
+        <!-- Biggest event -->
+        <section class=" py-25">
+            <div class="container mx-auto px-25">
+                <div class=" px-40">
+
+                    <h2 class="text-4xl text-white font-bold text-center mb-8">
+                        The Biggest Digital Event in 2024
+                    </h2>
+                    <p class="text-slate-400 text-center text-lg">
+                        Sometimes by accident, sometimes chunks as necessary making this the first true generator on the
+                        Internet. recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages.
+                    </p>
+
+                    <div class="grid grid-cols-2 lg:grid-cols-2 ">
+                        <div class="mt-15">
+                            <div class=" bg-blue-500 p-10">
+                                <img src="./assets/ticket-BS0l2w50.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mt-15 ">
+                            <div class="bg-cyan-500  p-8 ">
+                                <div class="bg-gray-800 p-5 rounded-2xl">
+                                    <h2 class="text-white text-xl mb-8">Ticket Prices</h2>
+                                    <div class="flex space-x-8 mb-4">
+                                        <span class="text-white text-xl">$100</span>
+                                        <span class="text-slate-500 text-xl">Early birds</span>
+                                        <span class="text-white/20 text-xl">Until May 20 , 2022</span>
+                                    </div>
+                                    <div class="flex space-x-8 mb-4">
+                                        <span class="text-white text-xl">$150</span>
+                                        <span class="text-slate-500 text-xl">Late birds</span>
+                                        <span class="text-white/20 text-xl">After May 20 , 2022</span>
+                                    </div>
+                                    <a href="#"
+                                        class="relative overflow-hidden w-92 md:w-full  sm:h-12  flex justify-center items-center h-12 border border-blue-600 text-blue-600 font-semibold rounded group">
+
+                                        <span
+                                            class="absolute top-0 left-0 w-full h-0 bg-blue-600 transition-all duration-200  ease-out group-hover:h-full"></span>
+
+                                        <span
+                                            class="relative flex items-center z-10 group-hover:text-white transition-colors duration-200 text-lg ">
+                                            <i
+                                                class="relative left-0  z-10 group-hover:text-white transition-colors duration-300 bi bi-calendar me-4 text-out-btn"></i>
+                                            Upcoming Conference
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+    </main>
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
